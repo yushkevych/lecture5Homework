@@ -104,7 +104,7 @@ public class BaseTest {
   @AfterClass
   public void releaseDriver(){
     if (driver!= null) {
-//      driver.quit();
+      driver.quit();
     }
   }
 }
