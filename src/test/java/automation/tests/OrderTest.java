@@ -98,6 +98,7 @@ public class OrderTest extends BaseTest {
   }
 
   private void productDeliveryFirstPage () {
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a[class*='btn-primary']")));
     driver.findElement(By.cssSelector("a[class*='btn-primary']")).click();
     CustomReporter.logAction("Checkout the order");
 
